@@ -25,7 +25,8 @@ export enum ChainId {
   ETHW = 10001,
   METISTESTNET = 599,
   PULSTESTNET4 = 943,
-  LINEATESTNET = 59140
+  LINEATESTNET = 59140,
+  LINEA = 59144
 }
 
 export const WETH = {
@@ -162,5 +163,12 @@ export const WETH = {
     18,
     'wETH',
     'Wrapped ETH'
+  ),
+  [ChainId.LINEA]: new Token(
+      ChainId.LINEA,
+      '0xe5D7C2a44FfDDf6b295A15c148167daaAf5Cf34f',
+      18,
+      'wETH',
+      'Wrapped ETH'
   )
 }

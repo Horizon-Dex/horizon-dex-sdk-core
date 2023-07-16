@@ -24,7 +24,8 @@ export declare enum ChainId {
     ETHW = 10001,
     METISTESTNET = 599,
     PULSTESTNET4 = 943,
-    LINEATESTNET = 59140
+    LINEATESTNET = 59140,
+    LINEA = 59144
 }
 export declare const WETH: {
     1: Token;
@@ -52,4 +53,5 @@ export declare const WETH: {
     599: Token;
     943: Token;
     59140: Token;
+    59144: Token;
 };
