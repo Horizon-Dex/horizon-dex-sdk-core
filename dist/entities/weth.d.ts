@@ -26,7 +26,7 @@ export declare enum ChainId {
     PULSTESTNET4 = 943,
     LINEATESTNET = 59140,
     LINEA = 59144,
-    BASETESTNET = 84531
+    BASEMAINNET = 8453
 }
 export declare const WETH: {
     1: Token;
@@ -55,5 +55,5 @@ export declare const WETH: {
     943: Token;
     59140: Token;
     59144: Token;
-    84531: Token;
+    8453: Token;
 };
