@@ -28,7 +28,8 @@ export enum ChainId {
   LINEATESTNET = 59140,
   LINEA = 59144,
   BASETESTNET = 84531,
-  BASEMAINNET = 8453
+  BASEMAINNET = 8453,
+  X1TESTNET = 195,
 }
 
 export const WETH = {
@@ -180,5 +181,12 @@ export const WETH = {
     18,
     'wETH',
     'Wrapped ETH'
+  ),
+  [ChainId.X1TESTNET]: new Token(
+      ChainId.X1TESTNET,
+      '0xA749Ad81913CdC19881EBEb64631dF72be708335',
+      18,
+      'wOKB',
+      'Wrapped OKB'
   )
 }
