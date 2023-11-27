@@ -10,7 +10,16 @@ import { WETH } from './weth'
  */
 export class Ether extends NativeCurrency {
   protected constructor(chainId: number) {
-    super(chainId, 18, 'ETH', 'Ether')
+    switch (chainId) {
+      case ChainId.X1TESTNET: {
+        super(chainId, 18, 'OKB', 'OKB')
+        break
+      }
+      default: {
+        super(chainId, 18, 'ETH', 'Ether')
+        break
+      }
+    }
   }
 
   public get wrapped(): Token {

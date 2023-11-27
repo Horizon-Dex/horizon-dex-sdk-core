@@ -636,7 +636,23 @@ var Ether = /*#__PURE__*/function (_NativeCurrency) {
   _inheritsLoose(Ether, _NativeCurrency);
 
   function Ether(chainId) {
-    return _NativeCurrency.call(this, chainId, 18, 'ETH', 'Ether') || this;
+    var _this;
+
+    switch (chainId) {
+      case exports.ChainId.X1TESTNET:
+        {
+          _this = _NativeCurrency.call(this, chainId, 18, 'OKB', 'OKB') || this;
+          break;
+        }
+
+      default:
+        {
+          _this = _NativeCurrency.call(this, chainId, 18, 'ETH', 'Ether') || this;
+          break;
+        }
+    }
+
+    return _this;
   }
 
   Ether.onChain = function onChain(chainId) {
